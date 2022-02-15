@@ -1,7 +1,9 @@
 # App : Build your own heatmap
 This app can be used to generate heatmap figures, which are commonly used for showing gene expression data, as the example below:<br>
-It uses R shiny to build the app and the pheatmap package to construct the figures. You can choose the parameters you want for your heatmap (Such as: Distance method, clustering method, color palettes, font size).
-#Input file
+![Heatmap](https://github.com/afs77/Heatmap_app/blob/main/heatmap.png?raw=true)
+It uses R shiny to build the app and the pheatmap package to construct the figures. You can choose the parameters you want for your heatmap (Such as: Distance method, clustering method, color palettes, font size).<br><br>
+
+# Input file
 The input must be a .txt file containing a numeric matrix with the name of lines and columns, like this:<br>
 sample1 sample2 sample3 sample4<br>
 gene1 0.21 0.42 0.24 0.31<br>
@@ -13,8 +15,9 @@ gene6 0.42 0.54 0.66 0.23<br>
 gene7 0.21 0.38 0.24 0.18<br>
 gene8 0.11 0.23 0.61 0.53<br>
 gene9 0.49 0.77 0.87 0.38<br>
-Please check the example input file [here]()<br>
-#How to run
+Please check the example input file [here](https://github.com/afs77/Heatmap_app/blob/main/example_input.txt)<br><br>
+
+# How to run
 Open the file in R studio. Click on the Run app button. You will see the app in a new window.<br>
 Click on the browse button on the left to add your input file, making sure it is a .txt and it is formated as above. You will see the heatmap figure built using standard parameters showing on the right panel. <br>
 You can now change the parameters on the left panel, and see the resulting figure on the right panel. Once you are satisfied with the result, you can click on the Export.png button on the bottom left to export your figure as a .png file. Save it wherever you want on your computer. The resolution of this image is 300 dpi.
