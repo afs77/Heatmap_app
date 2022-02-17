@@ -18,6 +18,10 @@ gene9 0.49 0.77 0.87 0.38<br>
 Please check the example input file [here](https://github.com/afs77/Heatmap_app/blob/main/example_input.txt)<br><br>
 
 # How to run
-Open the heatmap_app.R file in R studio. Click on the Run app button. You will see the app in a new window.<br>
-Click on the browse button on the left to add your input file, making sure it is a .txt and it is formated as above. You will see the heatmap figure, built using standard parameters, on the right panel. <br>
-You can now change the parameters on the left panel, and see the resulting figure on the right panel. Once you are satisfied with the result, you can click on the Export.png button on the bottom left to export your figure as a .png file. Save it wherever you want on your computer. The resolution of this image is 300 dpi.
+- You will need to have [R](https://www.r-project.org/) and [Rstudio free IDE](https://www.rstudio.com/) installed in your computer.<br>
+- The app uses a few R packages: shiny (to build the app), pheatmap (to create the heatmaps), gplots and Rcolorbrewer (for the color palletes). To install these packages, open Rstudio, type the following command in the Console tab and hit enter:<br>
+install.packages(c("shiny", "pheatmap", "gplots", "Rcolorbrewer"))<br>
+- Open the heatmap_app.R file in R studio. Click on the Run app button. You will see the app in a new window.<br>
+- Click on the browse button on the left to add your input file, making sure it is a .txt and it is formated as described above. You will see the heatmap figure, built using standard parameters, on the right panel. <br>
+- You can now change the parameters on the left panel, and see the resulting figure on the right panel. 
+- Once you are satisfied with the result, you can click on the Export.png button on the bottom left to export your figure as a .png file. Save it wherever you want on your computer. The resolution of this image is 300 dpi.
